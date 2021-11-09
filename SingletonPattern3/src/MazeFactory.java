@@ -16,6 +16,7 @@ public abstract class MazeFactory {
 //	Return a reference to the single instance.
 //	If the instance not yet created, create "enchanted" as default.
 	public static MazeFactory instance() {
+		System.out.println("Class is created "+uniqueInstance);
 		if (uniqueInstance == null)
 			return instance("EnchantedMazeFactory");
 		else
@@ -24,7 +25,6 @@ public abstract class MazeFactory {
 	
 //	Create the instance using specified String name.
 	public static MazeFactory instance(String name) {
-		System.out.println("Class "+name+" is created");
 		if (uniqueInstance == null)
 			try {
 				uniqueInstance = (MazeFactory) Class.forName(name).newInstance();
@@ -32,6 +32,7 @@ public abstract class MazeFactory {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		System.out.println("Class "+name+" is created "+uniqueInstance);
 		return uniqueInstance;
 	}
 	

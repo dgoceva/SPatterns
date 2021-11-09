@@ -17,6 +17,7 @@ public abstract class MazeFactory {
 	
 //	Return a reference to the single instance.
 	public static MazeFactory instance() {
+		System.out.println("Class is created "+uniqueInstance);
 		return uniqueInstance;
 	}	
 }

@@ -13,6 +13,7 @@ public class AgentMazeFactory extends MazeFactory {
 		if (uniqueInstance == null) {
 			uniqueInstance = new AgentMazeFactory();
 		}
+		System.out.println("Class AgentMazeFactory is created "+uniqueInstance);
 		return uniqueInstance;
 	}
 

@@ -12,6 +12,7 @@ public class EnchantedMazeFactory extends MazeFactory {
 		if (uniqueInstance == null) {
 			uniqueInstance = new EnchantedMazeFactory();
 		}
+		System.out.println("Class EnchantedMazeFactory is created "+uniqueInstance);
 		return uniqueInstance;
 	}
 	
