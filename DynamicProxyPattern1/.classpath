@@ -6,7 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="D:/Lectures/SPatterns/Demos/DynamicProxyPattern1/slf4j.api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/Lectures/SPatterns/Demos/DynamicProxyPattern1/slf4j-simple-1.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/danielagotseva/Samples/SPatterns/DynamicProxyPattern1/slf4j-simple-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/danielagotseva/Samples/SPatterns/DynamicProxyPattern1/slf4j.api-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
