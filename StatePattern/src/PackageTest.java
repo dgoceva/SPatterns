@@ -25,6 +25,6 @@ public class PackageTest {
 	    pkg.setState(new DeliveredState());
 	    pkg.previousState();
 	 
-	    assertThat(pkg.getState(), instanceOf(ReceivedState.class));
+	    assertThat(pkg.getState(), instanceOf(OrderedState.class));
 	}
 }
