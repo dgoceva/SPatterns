@@ -23,7 +23,7 @@ public class SortStrategyExample {
         array.add(-42);
         SortArray sa = new SortArray();
 
-        sa.setStrategy(new NullStrategy());
+        sa.setStrategy(new NullSort());
         sa.sort(array);
         for(Object obj: array)
             System.out.print(obj+"\t");

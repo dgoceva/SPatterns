@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class NullStrategy implements SortStrategy {
+public class NullSort implements SortStrategy {
 
 	@Override
 	public void sort(ArrayList array) {
