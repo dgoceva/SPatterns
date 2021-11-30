@@ -22,6 +22,13 @@ public class SortStrategyExample {
         array.add(2);
         array.add(-42);
         SortArray sa = new SortArray();
+
+        sa.setStrategy(new NullStrategy());
+        sa.sort(array);
+        for(Object obj: array)
+            System.out.print(obj+"\t");
+        System.out.println();
+
         sa.setStrategy(new BubbleSort());
         sa.sort(array);
        for(Object obj: array)
