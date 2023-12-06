@@ -1,6 +1,6 @@
 
 public class GetPlanFactory {
-	 //use getPlan method to get object of type Plan   
+	  //use getPlan method to get object of type Plan   
     public Plan getPlan(String planType){  
          if(planType == null){  
           return null;  
@@ -15,5 +15,5 @@ public class GetPlanFactory {
              return new InstitutionalPlan();  
        }  
    return null;  
-    }  
-}
+}  
+}//end of GetPlanFactory class.  
