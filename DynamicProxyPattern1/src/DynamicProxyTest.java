@@ -1,10 +1,12 @@
+import java.io.IOException;
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DynamicProxyTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		MyLogger.setup();
 		//version 1
 		Map proxyInstance = (Map) Proxy.newProxyInstance(
 				  DynamicProxyTest.class.getClassLoader(), 

@@ -3,16 +3,16 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Logger;
 
 
 
 public class TimingDynamicInvocationHandler implements InvocationHandler {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(
-    		TimingDynamicInvocationHandler.class);
+//    private static final Logger LOGGER = LoggerFactory.getLogger(
+//    		TimingDynamicInvocationHandler.class);
+//    private static Logger LOGGER = Logger.getAnonymousLogger();
+	private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     		
     private final Map<String, Method> methods = new HashMap<>();
     
@@ -33,8 +33,8 @@ public class TimingDynamicInvocationHandler implements InvocationHandler {
         Object result = methods.get(method.getName()).invoke(target, args);
         long elapsed = System.nanoTime() - start;
  
-        LOGGER.info("Executing "+method.getName()+" with {} params finished in {} ns", 
-        		Arrays.toString(args), elapsed);
+        LOGGER.info(String.format("Executing %s finished in %d ns", 
+        		method.getName(), elapsed));
  
         return result;
 	}

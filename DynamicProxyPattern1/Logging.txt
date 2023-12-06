@@ -1,0 +1,12 @@
+XI 29, 2022 12:45:28 PM DynamicInvocationHandler invoke
+INFO: Invoked method: put
+XI 29, 2022 12:45:28 PM TimingDynamicInvocationHandler invoke
+INFO: Executing put finished in 435208 ns
+XI 29, 2022 12:45:28 PM TimingDynamicInvocationHandler invoke
+INFO: Executing get finished in 22807 ns
+XI 29, 2022 12:45:28 PM TimingDynamicInvocationHandler invoke
+INFO: Executing charAt finished in 13499 ns
+XI 29, 2022 12:45:28 PM TimingDynamicInvocationHandler invoke
+INFO: Executing length finished in 18153 ns
+XI 29, 2022 12:45:28 PM TimingDynamicInvocationHandler invoke
+INFO: Executing charAt finished in 16757 ns
