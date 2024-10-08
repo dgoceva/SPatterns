@@ -2,7 +2,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 // An observer of price changes.
-      public class PriceObserver implements Observer {
+      @SuppressWarnings("deprecation")
+	public class PriceObserver implements Observer {
            private float price;
            public PriceObserver() {
                  price = 0;

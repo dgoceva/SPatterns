@@ -1,5 +1,6 @@
 import java.util.Observable;
 
+@SuppressWarnings("deprecation")
 public class ObservableCounter extends Observable {
 
 	// The model.

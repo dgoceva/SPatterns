@@ -2,7 +2,8 @@ import java.util.Observable;
 import java.util.Observer;
 
 // An observer of name changes.
-            public class NameObserver implements Observer {
+            @SuppressWarnings("deprecation")
+			public class NameObserver implements Observer {
                      private String name;
                      public NameObserver() {
                            name = null;

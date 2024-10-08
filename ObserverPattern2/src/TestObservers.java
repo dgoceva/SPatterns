@@ -1,6 +1,7 @@
 // Test program for ConcreteSubject, NameObserver and PriceObserver
 public class TestObservers {
-  public static void main(String args[]) {
+  @SuppressWarnings("deprecation")
+public static void main(String args[]) {
     // Create the Subject and Observers.
     ConcreteSubject s = new ConcreteSubject("Corn Pops", 1.29f);
     NameObserver nameObs = new NameObserver();

@@ -3,6 +3,7 @@ import java.util.Observable;
 /**
 * A subject to observe!
 */
+@SuppressWarnings("deprecation")
 public class ConcreteSubject extends Observable {
    
      private String name;

@@ -39,6 +39,7 @@ public class ButtonExample
 
    frame.add("Center", buttonPanel);
    frame.addWindowListener(this);
+   frame.setSize(300, 300);
    frame.pack();
    frame.setVisible(true);
 }
