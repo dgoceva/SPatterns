@@ -34,7 +34,7 @@ public class Java8Function4 {
 
     // sha256 a string
     public String sha256(String str) {
-        return DigestUtils.sha256Hex(str);
+        return DigestUtils.shaHex(str);
     }
 
 }
