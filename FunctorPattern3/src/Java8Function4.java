@@ -13,10 +13,10 @@ public class Java8Function4 {
         List<String> list = Arrays.asList("node", "c++", "java", "javascript");
 
         // lambda
-        //List<String> result = obj.map(list, x -> obj.sha256(x));
+        List<String> result = obj.map(list, x -> obj.sha256(x));
 
         // method reference
-        List<String> result = obj.map(list, obj::sha256);
+//        List<String> result = obj.map(list, obj::sha256);
 
         result.forEach(System.out::println);
 
